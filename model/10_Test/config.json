@@ -1,0 +1,19 @@
+{
+    "version": "1.0",
+    "objects": [
+        {
+            "path": "/System/Core",
+            "class": "Core",
+            "ObjectName": "Core",
+            "ScriptLibrary": {
+                "explicit": false,
+                "ScriptList": [
+                    {
+                        "LuaModuleName": "syslib.workorders",
+                        "scriptReference": "scripts.syslib-workorders"
+                    }
+                ]
+            }
+        }
+    ]
+}

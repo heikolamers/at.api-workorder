@@ -1,0 +1,35 @@
+{
+    "version": "1.0",
+    "connections": [
+        {
+            "name": "test-environment",
+            "hostname": "localhost",
+            "port": 8003,
+            "usr": "so",
+            "pwd": "Inmation!1"
+        }
+    ],
+    "scriptReferences": [
+        {
+            "namespace": "scripts",
+            "folderPath": "./scripts"
+        }
+    ],
+    "actions": [
+        {
+            "name": "Create Objects (mass)",
+            "type": "mass",
+            "model": "./model/10_test"
+        },
+        {
+            "name": "Exec Function 'say_hello' example",
+            "type": "exec-function",
+            "ctx": "/System",
+            "lib": "my-lib",
+            "func": "say_hello",
+            "farg": {
+                "name": "inmation user"
+            }
+        }
+    ]
+}
