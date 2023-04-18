@@ -11,6 +11,10 @@
                     {
                         "LuaModuleName": "syslib.workorders",
                         "scriptReference": "scripts.syslib-workorders"
+                    },
+                    {
+                        "LuaModuleName": "syslib.api-workorders",
+                        "scriptReference": "scripts.syslib.api-workorders"
                     }
                 ]
             }

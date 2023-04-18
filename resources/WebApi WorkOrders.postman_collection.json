@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "85ef2a30-5b97-436d-929a-ad436e94d4c8",
+		"name": "WebApi WorkOrders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7455287"
+	},
+	"item": [
+		{
+			"name": "api-workorders.find",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"$and\": [\r\n        {\r\n            \"Created Date\": {\r\n                \"$gte\": {\r\n                    \"$date\": 1\r\n                }\r\n            }\r\n        },\r\n        {\r\n            \"Created Date\": {\r\n                \"$lte\": {\r\n                    \"$date\": 1681839728540\r\n                }\r\n            }\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{sbaseaddr}}/execfunction/syslib.api-workorders/find",
+					"host": [
+						"{{sbaseaddr}}"
+					],
+					"path": [
+						"execfunction",
+						"syslib.api-workorders",
+						"find"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "Inmation!1",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "so",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

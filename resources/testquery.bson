@@ -1,0 +1,18 @@
+{
+    "$and": [
+        {
+            "Created Date": {
+                "$gte": {
+                    "$date": 1
+                }
+            }
+        },
+        {
+            "Created Date": {
+                "$lte": {
+                    "$date": 1681837240168
+                }
+            }
+        }
+    ]
+}
